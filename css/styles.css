@@ -1,0 +1,117 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #ffffff */
+/* белый с прозрачностю rgba(255, 255, 255, 0.6) */
+/* акцент #2196F3 */
+/* цвет фона героя и подвала #2F303A */
+/* цвет фона вторичный и кнопок для портфолио #F5F4FA */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --other-bg-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* стили шапки */
+.header-logo {
+  color: var(--title-text-color);
+}
+
+.logo-part,
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-info .contacts-header {
+  color: var(--primary-text-color);
+}
+
+.contacts-info .contacts-header:hover,
+.contacts-info .contacts-header:focus {
+  color: var(--accent-color);
+}
+
+/* стили главной секции */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* общие стили секций */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* стили особенностей */
+.features-title {
+  color: var(--title-text-color);
+}
+
+/* стили работ */
+
+/* стили команды */
+.team {
+  background-color: var(--other-bg-color);
+}
+.team-worker {
+  color: var(--title-text-color);
+}
+
+/* стили подвала  */
+.page-footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer-logo {
+  color: var(--primary-white-color);
+}
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--accent-color);
+}
+.location {
+  color: var(--primary-white-color);
+}
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* стили портфолио  */
+.portfolio-button {
+  background-color: var(--other-bg-color);
+  color: var(--title-text-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.project-title {
+  color: var(--title-text-color);
+}
