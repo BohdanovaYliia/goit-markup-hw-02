@@ -18,8 +18,11 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-
   font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -27,18 +30,18 @@ body {
 }
 
 /* стили шапки */
-.header-logo {
+.logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-.logo-part,
-.header-logo:hover,
-.header-logo:focus {
+.accent,
+.logo:hover,
+.logo:focus {
   color: var(--accent-color);
 }
 
@@ -48,6 +51,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -58,16 +62,17 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-info .contacts-header {
+.contacts-header {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.contacts-info .contacts-header:hover,
-.contacts-info .contacts-header:focus {
+.contacts-header:hover,
+.contacts-header:focus {
   color: var(--accent-color);
 }
 
@@ -87,18 +92,18 @@ body {
 .hero-button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
   align-items: center;
   text-align: center;
 }
 
 /* общие стили секций Студии */
-.section {
-  letter-spacing: 0.03em;
-}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -116,28 +121,19 @@ body {
   text-transform: uppercase;
 }
 
-.features-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 /* стили работ Студии */
 
 /* стили команды Студии */
-.team {
+.workers {
   background-color: var(--other-bg-color);
-}
-.team-worker {
-  color: var(--title-text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-
-.worker-position {
-  font-weight: 400;
+.worker-name {
+  color: var(--title-text-color);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -146,43 +142,48 @@ body {
 /* стили подвала */
 .page-footer {
   background-color: var(--secondary-bg-color);
-  letter-spacing: 0.03em;
 }
 
 .footer-logo {
   color: var(--primary-white-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--accent-color);
 }
 
 .location {
   color: var(--primary-white-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 }
 
 .contacts-footer {
   color: var(--contacts-footer-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
+}
+
+.footer-logo:hover,
+.footer-logo:focus,
+.contacts-footer:hover,
+.contacts-footer:focus,
+.location:hover,
+.location:focus {
+  color: var(--accent-color);
 }
 
 /* стили Портфолио */
 .portfolio-button {
   background-color: var(--other-bg-color);
   color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -192,7 +193,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.section .project-title {
+.project-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -200,7 +201,7 @@ body {
   letter-spacing: 0.06em;
 }
 .project-category {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
